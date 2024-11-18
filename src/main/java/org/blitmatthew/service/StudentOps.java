@@ -7,4 +7,8 @@ import java.util.List;
 
 public class StudentOps {
     private List<Student> students = DataRetriever.getStudents();
+
+    public Integer getStudentCount() {
+        return students.size();
+    }
 }

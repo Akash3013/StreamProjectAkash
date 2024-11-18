@@ -1,5 +1,7 @@
 package org.blitmatthew.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 // Student class to match the JSON structure
 public class Student {
     private int id;
@@ -14,7 +16,7 @@ public class Student {
     private int graduationYear;
     private double gpa;
     private int creditHours;
-    private boolean isInternational;
+    private boolean international;
     private boolean scholarshipRecipient;
     private String phoneNumber;
 
@@ -117,12 +119,13 @@ public class Student {
         this.creditHours = creditHours;
     }
 
+    @JsonProperty("isInternational")
     public boolean isInternational() {
-        return isInternational;
+        return international;
     }
 
     public void setInternational(boolean international) {
-        isInternational = international;
+        this.international = international;
     }
 
     public boolean isScholarshipRecipient() {
