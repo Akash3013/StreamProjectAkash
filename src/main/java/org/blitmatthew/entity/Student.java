@@ -154,4 +154,18 @@ public class Student {
                 ", gpa=" + gpa +
                 '}';
     }
+
+    public boolean stremMajor(String major) {
+        return major.equalsIgnoreCase("Computer Science") ||
+               major.equalsIgnoreCase("Mathematics") ||
+               major.equalsIgnoreCase("Physics") ||
+               major.equalsIgnoreCase("Chemistry") ||
+               major.equalsIgnoreCase("Biology") ||
+               major.equalsIgnoreCase("Engineering") ||
+               major.equalsIgnoreCase("Data Science");
+    }
+
+    public boolean isStremMajor(String major) {
+        return stremMajor(major);
+    }
 }
